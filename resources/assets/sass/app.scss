@@ -1,0 +1,71 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+//@import url("https://fonts.googleapis.com/css?family=Lobster|Merriweather|Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+
+//font-family: 'Merriweather', serif;
+//font-family: 'Lobster', cursive;
+//font-family: 'Open Sans', sans-serif;
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+//ff6600 // orange
+//0098ff // blue
+//ffe500 // yellow
+//00ff66 // green
+body { background-color: #ff6600; }
+#header {
+  background-color:#ff6600;
+  border-bottom:3px solid #fff;
+  #logo {
+    color: #fff;
+    display: inline-block;
+    font-family: Lobster;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  nav {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 34px;
+    margin-left: 20px;
+  }
+  .nav-item a { color: #fff; }
+  .nav > li > a:hover { background-color: transparent; }
+}
+#body {
+  background-color: #fcfcfc;
+  padding: 10px;
+}
+#footer {
+  background-color: #ff6600;
+  border-top: 3px solid #fff;
+  color: #fff;
+  padding: 10px;
+  a { color: #fff; }
+}
+.table-calendar {
+  th {
+    background-color: #444;
+    color: #fff;
+  }
+  td {
+    height: 200px;
+    &.day-on {
+      background-color: #cdf;
+    }
+    &.weekend {
+      background-color:#ddd;
+      font-style:italic;
+    }
+  }
+}
+
+.field-error {
+  outline: 1px solid #c00;
+}
